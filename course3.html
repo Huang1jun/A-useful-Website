@@ -6,11 +6,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="description" content="Yale - Education HTML Template">
-		<meta name="keywords" content="theme_ocean, college, course, e-learning, education, high school, kids, learning, online, online courses, school, student, teacher, tutor, university">
+		<meta name="description" content="Education of college students">
+		<meta name="keywords" content="themes_mountain, college, course, e-learning, education, high school, kids, learning, online, online courses, school, student, teacher, tutor, university">
 		<meta name="author" content="theme_ocean">
 		<!-- SITE TITLE -->
-		<title>Yale - Education HTML Template</title>			
+		<title>Education of college students</title>			
 		<!-- Latest Bootstrap min CSS -->
 		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">		
 		<!-- Google Font -->
@@ -35,6 +35,30 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		<style>
+			#main-menu {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			/* #main-menu ul {
+				display: flex;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				align-items: center; 
+			} */
+
+			#main-menu ul li {
+				padding: 0px 28px; 
+			}
+
+			#main-menu ul li a {
+				display: block;
+				padding: 25px 0; 
+			}
+		</style>
 </head>
 <body>
 	
@@ -43,43 +67,81 @@
 			<span class="loader"></span>
 		</div>
 	<!-- END PRELOADER -->
-	
+
 	<!-- START LOGO WITH CONTACT -->
 	<section class="logo-contact">
 		<div class="container">
-			<div class="row">
+			<div class="row d-flex justify-content-between">
+				<!-- Contact Items -->
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 					<div class="single-top-contact">
 						<i class="fa fa-phone"></i>
-						<h4>+485 7548 854826</h4>
+						<h4>+86 188 8888 8888</h4>
 					</div>
 				</div><!--- END COL -->	
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 					<div class="single-top-contact">							
 						<i class="fa fa-envelope"></i>
-						<h4><a href="mailto:example@gmail.com">example@mail.com</a></h4>	
+						<h4><a href="mailto:example@gmail.com">example@gmail.com</a></h4>	
 					</div>
 				</div><!--- END COL -->	
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 					<div class="single-top-contact">
 						<i class="fa fa-clock-o"></i>
-						<h4>Mon to sat Open: 9am - 6pm</h4>
+						<h4>全天开放</h4>
 					</div>
-				</div><!--- END COL -->	
-				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="top_social_profile">
-						<ul>
-							<li><a href="#" class="top_f_facebook"><i class="fa fa-facebook" title="Facebook"></i></a></li>
-							<li><a href="#" class="top_f_twitter"><i class="fa fa-twitter" title="Twitter"></i></a></li>
-							<li><a href="#" class="top_f_instagram"><i class="fa fa-instagram" title="Instagram"></i></a></li>
-							<li><a href="#" class="top_f_linkedin"><i class="fa fa-linkedin" title="LinkedIn"></i></a></li>
-						</ul>
-					</div>
-				</div><!--- END COL -->						
+				</div><!--- END COL -->					
 			</div><!--- END ROW -->
 		</div><!--- END CONTAINER -->
 	</section>
-	<!-- END LOGO WITH CONTACT -->	
+	<!-- END LOGO WITH CONTACT -->
+	
+	<!-- START NAVBAR -->  
+	<div id="navigation" class="fixed-top navbar-light bg-faded site-navigation">
+		<div class="container top_menu_bg">
+			<div class="row">
+				<div class="col-lg-2 col-md-3 col-sm-4">
+					<div class="site-logo">
+						<a href="index.html"><img src="assets/images/all-img/logo1111.png" alt="" style="width: 50px; height: auto;"></a>          			        				
+					</div>
+				</div><!--- END Col -->
+				
+				<div class="col-lg-6 col-md-10 col-sm-8 ">
+					<div class="header_right ">
+						<nav id="main-menu" class="ms-auto">
+							<ul>
+							  <li>
+								<a class="nav-link" href="index.html">主页  </a>
+								
+							   </li>
+							    <li><a class="nav-link" href="#">页面<span class="ti-angle-down"></span></a>
+									<ul>
+										<li><a class="nav-link" href="about.html">关于我们</a></li>										
+										<li><a class="nav-link" href="team.html">导师概览</a></li>
+										<li><a class="nav-link" href="team-details.html">导师介绍</a></li>						
+									</ul>
+								</li>
+								<li>
+									<a class="nav-link" href="course.html">课程 </a>
+									
+								</li>
+								
+							    <li><a class="nav-link" href="contact.html">联系我们</a></li>
+							</ul>
+						</nav>
+						<div id="mobile_menu"></div>
+					</div>
+				</div><!--- END Col -->
+				<div class="col-lg-4 col-md-3 col-sm-8 m-none">
+
+					<div class="call_to_action">
+						<a class="btn_two" href="register.html">登录 / 注册</a>
+					</div><!--- END SOCIAL PROFILE -->					
+				</div><!--- END Col -->
+			</div><!--- END ROW -->
+		</div><!--- END CONTAINER -->
+	</div> 	  
+	<!-- END NAVBAR -->
 	
 	<!-- START NAVBAR -->  
 	<div id="navigation" class="fixed-top navbar-light bg-faded site-navigation">
