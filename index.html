@@ -1,235 +1,319 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Yale - 教育 HTML 模板">
-    <meta name="keywords" content="主题, 大学, 课程, 在线学习, 教育, 高中, 学生, 教师, 导师, 大学">
-    <meta name="author" content="theme_ocean">
-    <!-- 网站标题 -->
-    <title>Yale - 教育 HTML 模板</title>            
-    <!-- 最新 Bootstrap min CSS -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">        
-    <!-- 谷歌字体 -->
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/themify-icons.css">
-    <!--- owl carousel CSS-->
-    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.css">
-    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">                
-    <!--slicknav CSS-->
-    <link rel="stylesheet" href="assets/css/slicknav.css">       
-    <!-- MAGNIFIC CSS -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">    
-    <!-- 动画效果 CSS -->
-    <link rel="stylesheet" href="assets/css/animate.css">            
-    <!-- 样式 CSS -->                    
-    <link rel="stylesheet" href="assets/css/style.css" />                
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- 警告：如果通过 file:// 查看页面，Respond.js 将不起作用 -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<html lang="en">
+	<head>
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="Education of college students">
+		<meta name="keywords" content="themes_mountain, college, course, e-learning, education, high school, kids, learning, online, online courses, school, student, teacher, tutor, university">
+		<meta name="author" content="theme_ocean">
+		<!-- SITE TITLE -->
+		<title>Education of college students</title>			
+		<!-- Latest Bootstrap min CSS -->
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">		
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/fonts/themify-icons.css">
+		<!--- owl carousel Css-->
+		<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.css">
+		<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">				
+		<!--slicknav Css-->
+        <link rel="stylesheet" href="assets/css/slicknav.css">		
+		<!-- MAGNIFIC CSS -->
+		<link rel="stylesheet" href="assets/css/magnific-popup.css">	
+		<!-- animate CSS -->
+		<link rel="stylesheet" href="assets/css/animate.css">			
+		<!-- Style CSS -->					
+		<link rel="stylesheet" href="assets/css/style.css" />				
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style>
+			#main-menu {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			/* #main-menu ul {
+				display: flex;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				align-items: center; 
+			} */
+
+			#main-menu ul li {
+				padding: 0px 28px; 
+			}
+
+			#main-menu ul li a {
+				display: block;
+				padding: 25px 0; 
+			}
+		</style>
 </head>
 <body>
-    
-    <!-- 开始加载动画 -->
-        <div class="preloaders">
-            <span class="loader"></span>
-        </div>
-    <!-- 结束加载动画 -->
+	
+	<!-- START PRELOADER -->
+		<div class="preloaders">
+			<span class="loader"></span>
+		</div>
+	<!-- END PRELOADER -->
 
-    <!-- 开始 Logo 与联系信息 -->
-    <section class="logo-contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-top-contact">
-                        <i class="fa fa-phone"></i>
-                        <h4>187418187</h4>
-                    </div>
-                </div><!--- END COL -->    
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-top-contact">                            
-                        <i class="fa fa-envelope"></i>
-                        <h4><a href="mailto:example@gmail.com">114514.com</a></h4>    
-                    </div>
-                </div><!--- END COL -->    
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-top-contact">
-                        <i class="fa fa-clock-o"></i>
-                        <h4>全天候</h4>
-                    </div>
-                </div><!--- END COL -->    
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="top_social_profile">
-                        
-                    </div>
-                </div><!--- END COL -->                        
-            </div><!--- END ROW -->
-        </div><!--- END CONTAINER -->
-    </section>
-    <!-- 结束 Logo 与联系信息 -->
-    
-    <!-- 开始 导航栏 -->  
-    <div id="navigation" class="fixed-top navbar-light bg-faded site-navigation">
-        <div class="container top_menu_bg">
-            <div class="row">
-                <div class="col-lg-2 col-md-3 col-sm-4">
-                    <div class="site-logo">
-                        <a href="index.html"><img src="assets/images/all-img/logo.png" alt=""></a>                            
-                    </div>
-                </div><!--- END Col -->
-                
-                <div class="col-lg-6 col-md-9 col-sm-8 ">
-                    <div class="header_right ">
-                        <nav id="main-menu" class="ms-auto">
-                            <ul>
-                              <li><a class="nav-link" href="index.html">首页 <span class="ti-angle-down"></span></a>
-                                <ul>
-                                    <li><a class="nav-link" href="index.html">首页 01</a></li>
-                                    <li><a class="nav-link" href="index_2.html">首页 02</a></li>
-                                    <li><a class="nav-link" href="index_3.html">首页 03</a></li>
-                                </ul>
-                               </li>
-                                <li><a class="nav-link" href="#">页面 <span class="ti-angle-down"></span></a>
-                                    <ul>
-                                        <li><a class="nav-link" href="about.html">关于我们</a></li>                                       
-                                        <li><a class="nav-link" href="team.html">教师</a></li>
-                                        <li><a class="nav-link" href="team-details.html">教师详情</a></li>
-                                        <li><a class="nav-link" href="faq.html">常见问题</a></li>
-                                        <li><a class="nav-link" href="event.html">事件</a></li>
-                                        <li><a class="nav-link" href="event_single.html">单个事件</a></li>
-                                        <li><a class="nav-link" href="error.html">404 页面</a></li>                                       
-                                        <li><a class="nav-link" href="login.html">登录</a></li>
-                                        <li><a class="nav-link" href="register.html">注册</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="nav-link" href="course.html">课程 <span class="ti-angle-down"></span></a>
-                                    <ul>
-                                        <li><a class="nav-link" href="course.html">课程 01</a></li>
-                                        <li><a class="nav-link" href="course2.html">课程 02</a></li>
-                                        <li><a class="nav-link" href="course3.html">课程 03</a></li>
-                                        <li><a class="nav-link" href="course-sidebar.html">课程侧边栏</a></li>
-                                        <li><a class="nav-link" href="single_course.html">课程详情</a></li>
-                                    </ul>
-                                </li>
-                                
-                                <li><a class="nav-link" href="contact.html">联系我们</a></li>
-                            </ul>
-                        </nav>
-                        <div id="mobile_menu"></div>
-                    </div>
-                </div><!--- END Col -->
-                <div class="col-lg-4 col-md-3 col-sm-8 m-none">
+	<!-- START LOGO WITH CONTACT -->
+	<section class="logo-contact">
+		<div class="container">
+			<div class="row d-flex justify-content-between">
+				<!-- Contact Items -->
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="single-top-contact">
+						<i class="fa fa-phone"></i>
+						<h4>+86 188 8888 8888</h4>
+					</div>
+				</div><!--- END COL -->	
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="single-top-contact">							
+						<i class="fa fa-envelope"></i>
+						<h4><a href="mailto:example@gmail.com">example@gmail.com</a></h4>	
+					</div>
+				</div><!--- END COL -->	
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="single-top-contact">
+						<i class="fa fa-clock-o"></i>
+						<h4>全天开放</h4>
+					</div>
+				</div><!--- END COL -->					
+			</div><!--- END ROW -->
+		</div><!--- END CONTAINER -->
+	</section>
+	<!-- END LOGO WITH CONTACT -->
+	
+	<!-- START NAVBAR -->  
+	<div id="navigation" class="fixed-top navbar-light bg-faded site-navigation">
+		<div class="container top_menu_bg">
+			<div class="row">
+				<div class="col-lg-2 col-md-3 col-sm-4">
+					<div class="site-logo">
+						<a href="index.html"><img src="assets/images/all-img/logo1111.png" alt="" style="width: 50px; height: auto;"></a>          			        				
+					</div>
+				</div><!--- END Col -->
+				
+				<div class="col-lg-6 col-md-10 col-sm-8 ">
+					<div class="header_right ">
+						<nav id="main-menu" class="ms-auto">
+							<ul>
+							  <li>
+								<a class="nav-link" href="index.html">主页  </a>
+								
+							   </li>
+							    <li><a class="nav-link" href="#">页面<span class="ti-angle-down"></span></a>
+									<ul>
+										<li><a class="nav-link" href="about.html">关于我们</a></li>										
+										<li><a class="nav-link" href="team.html">导师概览</a></li>
+										<li><a class="nav-link" href="team-details.html">导师介绍</a></li>						
+									</ul>
+								</li>
+								<li>
+									<a class="nav-link" href="course.html">课程 </a>
+									
+								</li>
+								
+							    <li><a class="nav-link" href="contact.html">联系我们</a></li>
+							</ul>
+						</nav>
+						<div id="mobile_menu"></div>
+					</div>
+				</div><!--- END Col -->
+				<div class="col-lg-4 col-md-3 col-sm-8 m-none">
 
-                    <div class="call_to_action">
-                        <a class="btn_two" href="register.html">登录 / 注册</a>
-                    </div><!--- END SOCIAL PROFILE -->                   
-                </div><!--- END Col -->
-            </div><!--- END ROW -->
-        </div><!--- END CONTAINER -->
-    </div>       
-    <!-- 结束 导航栏 -->
-                                
-    <!-- 开始 主页 -->
-    <section  id="home" class="home_bg">    
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-sm-12 col-xs-12 text-center">    
-                    <div class="home_content">
-                        <h1>欢迎使用试验区 <br />共享课程小助手</h1>
-                        <p>为学习提供便捷与信息</p>                      
-                    </div>
-                    <div class="home_sb">
-                        <form action="#" class="banner_subs">
-                            <input type="text" class="form-control home_si" placeholder="在此搜索您的课程" required="required">
-                            <button type="button" class="subscribe__btn">搜索 <i class="fa fa-paper-plane-o"></i></button>
-                        </form>
-                    </div>
-                    
-                </div><!-- END COL-->
-            </div><!--- END ROW -->           
-        </div><!--- END CONTAINER -->
-    </section>
-    <!-- 结束 主页 -->
+					<div class="call_to_action">
+						<a class="btn_two" href="register.html">登录 / 注册</a>
+					</div><!--- END SOCIAL PROFILE -->					
+				</div><!--- END Col -->
+			</div><!--- END ROW -->
+		</div><!--- END CONTAINER -->
+	</div> 	  
+	<!-- END NAVBAR -->
+								
+	<!-- START HOME -->
+	<section  id="home" class="home_bg">	
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 col-xs-12 text-center">	
+					<div class="home_content">
+						<h1>欢迎使用试验区 <br />共享课程小助手</h1>
+						<p>为学习提供便捷与信息</p>						
+					</div>
+					<div class="home_sb">
+						<form action="#" class="banner_subs">
+							<input type="text" class="form-control home_si" placeholder="搜索你的课程！" required="required">
+							<button type="button" class="subscribe__btn">搜索 <i class="fa fa-paper-plane-o"></i></button>
+						</form>
+					</div>
+					
+				</div><!-- END COL-->
+			</div><!--- END ROW -->			
+		</div><!--- END CONTAINER -->
+	</section>
+	<!-- END  HOME -->
 
-    <!-- 开始 顶部推广功能 -->
-    <section class="tp_feature section-padding">
-       <div class="container">           
-            <div class="section_top text-center">
-                <h4>使用我们的网站</h4>
-                <h2>开始拥有更好更快的资源。</h2>
-                <p>道路漫漫修行远，我将上下求索。</p>
-            </div>               
-            <div class="row">                    
-                <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-                    <div class="single_tp">
-                        <h3>课程信息</h3>
-                        <p>我们将在园区内提供共享课程信息，学生可以在这里了解这些课程。</p>
-                        <a href="#" class="cta"><span>探索</span>
-                          <svg width="13px" height="10px" viewBox="0 0 13 10">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                          </svg>
-                        </a>
-                    </div>
-                </div><!-- END COL -->            
-                <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-                    <div class="single_tp">
-                        <h3>经验丰富的教师</h3>
-                        <p>我们将提供教师的基本信息供您参考，方便您选择课程。</p>
-                        <a href="#" class="cta"><span>探索</span>
-                          <svg width="13px" height="10px" viewBox="0 0 13 10">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                          </svg>
-                        </a>
-                    </div>
-                </div><!-- END COL -->            
-                <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
-                    <div class="single_tp">
-                        <h3>其他功能</h3>
-                        <p>我们将逐步推出新功能，您也可以给我们发送私信，给我们一些灵感和帮助。</p>
-                        <a href="#" class="cta"><span>探索</span>
-                          <svg width="13px" height="10px" viewBox="0 0 13 10">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                          </svg>
-                        </a>
-                    </div>
-                </div><!-- END COL -->                            
-            </div><!-- END ROW -->
-        </div><!-- END CONTAINER -->
-    </section>
-    <!-- 结束 顶部推广功能 -->    
-    
-    
-        
-    <!-- 最新 jQuery -->
-        <script src="assets/js/jquery-1.12.4.min.js"></script>
-    <!-- 最新编译和压缩的 Bootstrap -->
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>            
-    <!-- owl-carousel min js  -->
-        <script src="assets/owlcarousel/js/owl.carousel.min.js"></script>    
-    <!-- jquery.slicknav -->
-        <script src="assets/js/jquery.slicknav.js"></script>           
-    <!-- magnific-popup js -->               
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <!-- jquery mixitup min js -->
-        <script src="assets/js/jquery.mixitup.js"></script>            
-    <!-- scrolltopcontrol js -->
-        <script src="assets/js/scrolltopcontrol.js"></script>    
-    <!-- jquery purecounter vanilla js -->
-        <script src="assets/js/purecounter_vanilla.js"></script>            
-    <!-- WOW - Reveal Animations When You Scroll -->
-        <script src="assets/js/wow.min.js"></script>                
-    <!-- scripts js -->    
-        <script src="assets/js/scripts.js"></script>                
+	<!-- START TOP PROMO FEATURES -->
+	<section class="tp_feature section-padding">
+	   <div class="container">			
+			<div class="section_top text-center">
+				<h4>使用我们的网站 </h4>
+				<h2>开启便捷且有趣的学习之旅</h2>
+				<p>路漫漫其修远兮，吾将上下而求修 </p>
+			</div>				
+			<div class="row">					
+				<div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+					<div class="single_tp">
+						<h3>课程信息</h3>
+						<p>我们将在园区内提供共享课程信息，学生可以在这里网站学习这些课程。  </p>
+						<a href="#" class="cta"><span>探索更多</span>
+						  <svg width="13px" height="10px" viewBox="0 0 13 10">
+							<path d="M1,5 L11,5"></path>
+							<polyline points="8 1 12 5 8 9"></polyline>
+						  </svg>
+						</a>
+					</div>
+				</div><!-- END COL -->			
+				<div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+					<div class="single_tp">
+						<h3>经验丰富的教师团队</h3>
+						<p>我们会提供教师的基本信息供您参考，方便您联系教师并进行选择课程。</p>
+						<a href="#" class="cta"><span>探索更多</span>
+						  <svg width="13px" height="10px" viewBox="0 0 13 10">
+							<path d="M1,5 L11,5"></path>
+							<polyline points="8 1 12 5 8 9"></polyline>
+						  </svg>
+						</a>
+					</div>
+				</div><!-- END COL -->			
+				<div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
+					<div class="single_tp">
+						<h3>其他功能</h3>
+						<p>我们会逐步推出新的功能，您也可以私信给我们，给我们一些启发和帮助。</p>
+						<a href="#" class="cta"><span>探索更多</span>
+						  <svg width="13px" height="10px" viewBox="0 0 13 10">
+							<path d="M1,5 L11,5"></path>
+							<polyline points="8 1 12 5 8 9"></polyline>
+						  </svg>
+						</a>
+					</div>
+				</div><!-- END COL -->							
+			</div><!-- END ROW -->
+		</div><!-- END CONTAINER -->
+	</section>
+	<!-- END TOP PROMO FEATURES -->	
+
+	<!-- START FOOTER -->
+	<div class="footer section-padding">
+		<div class="container">				
+			<div class="row">						
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="single_footer">        
+						<p>我们是来自中央民族大学海南国际学院的一支团队。我们的成员均为大一学生。我们梦想着有一天能设计出稳定，高效，可以便捷同学学习的网站。</p>
+					</div>
+					<div class="foot_social">
+						<ul>
+							<li><a href="#">Github</a></li>
+							<li><a href="#">Email</a></li>
+							<li><a href="#">Bilibili</a></li>
+						</ul>						
+					</div>				
+				</div><!--- END COL -->						
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="single_footer">
+						<h4>课程</h4>
+						<ul>
+							<li><a href="#">高等数学</a></li>
+							<li><a href="#">离散数学</a></li>
+							<li><a href="#">面向对象程序设计</a></li>
+							<li><a href="#">矩阵理论与方法</a></li>
+							<li><a href="#">信号与系统</a></li>
+						</ul>
+					</div>
+				</div><!--- END COL -->	
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="single_footer">
+						<h4>团队</h4>
+						<ul>
+							<li><a href="#">关于我们</a></li>
+							<li><a href="#">项目进展</a></li>
+							<li><a href="#">在线社区</a></li>			
+							<li><a href="#">支持我们</a></li>						
+						</ul>
+					</div>
+				</div><!--- END COL -->	
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="single_footer">
+						<h4>如何联系我们</h4>
+						<div class="sf_contact">
+							<span class="ti-mobile"></span>
+							<h3>号码</h3>
+							<p>+86 188 8888 8888</p>
+						</div>
+						<div class="sf_contact">
+							<span class="ti-email"></span>
+							<h3>邮件地址</h3>
+							<p>example@gmail.com</p>
+						</div>
+						<div class="sf_contact">
+							<span class="ti-map"></span>
+							<h3>地址</h3>
+							<p>中国，海南</p>
+						</div>
+					</div>
+				</div><!--- END COL -->	
+			</div><!--- END ROW -->		
+			<div class="row fc">
+				<div class="col-lg-6 col-sm-6 col-xs-12">
+					<div class="footer_copyright">
+						<p>&copy; 2024. All Rights Reserved.</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-sm-6 col-xs-12">
+					<div class="footer_menu">
+						<ul>
+							<li><a href="#">使用事项</a></li>
+							<li><a href="#">隐私政策</a></li>
+							<li><a href="#">Cookie政策</a></li>
+						</ul>
+					</div>
+				</div><!-- END COL -->
+			</div>				
+		</div><!--- END CONTAINER -->
+	</div>
+	<!-- END FOOTER -->		
+
+	<!-- Latest jQuery -->
+		<script src="assets/js/jquery-1.12.4.min.js"></script>
+	<!-- Latest compiled and minified Bootstrap -->
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>			
+	<!-- owl-carousel min js  -->
+		<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>	
+	<!-- jquery.slicknav -->
+		<script src="assets/js/jquery.slicknav.js"></script>			
+	<!-- magnific-popup js -->               
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- jquery mixitup min js -->
+		<script src="assets/js/jquery.mixitup.js"></script>			
+	<!-- scrolltopcontrol js -->
+		<script src="assets/js/scrolltopcontrol.js"></script>	
+	<!-- jquery purecounter vanilla js -->
+		<script src="assets/js/purecounter_vanilla.js"></script>			
+	<!-- WOW - Reveal Animations When You Scroll -->
+		<script src="assets/js/wow.min.js"></script>				
+	<!-- scripts js -->	
+		<script src="assets/js/scripts.js"></script>				
 </body>
 </html>
