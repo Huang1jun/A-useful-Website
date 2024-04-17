@@ -1,6 +1,6 @@
 /*
-Author       : theme_ocean 
-Template Name: Yale - Education HTML Template
+Author       : mucNM1 
+Name         : Education of college students
 Version      : 1.0
 */
 (function($) {
@@ -20,7 +20,7 @@ Version      : 1.0
 		$('#main-menu').slicknav({
 			label: '',
 			duration: 1000,
-			easingOpen: "easeOutBounce", //available with jQuery UI
+			easingOpen: "easeOutBounce",
 			prependTo:'#mobile_menu',
 			closeOnClick: true,
 			easingClose:"swing", 
@@ -41,37 +41,7 @@ Version      : 1.0
 					$('.site-navigation, .header-white, .header').removeClass('navbar-fixed');
 				}
 			});		  	
-		/*END MENU JS*/
-		
-		/*START VIDEO JS*/
-		$('.video-play').magnificPopup({
-            type: 'iframe'
-        });
-		$('.co-video-play').magnificPopup({
-            type: 'iframe'
-        });
-		$('.product_item').mixItUp();
-		/*END VIDEO JS*/	
-
-		/* START VIDEO POPUP JS */
-		$('.magnific_popup').magnificPopup({
-		  disableOn: 700,
-		  type: 'iframe',
-		  mainClass: 'mfp-fade',
-		  removalDelay: 160,
-		  preloader: false,
-		  fixedContentPos: false,
-		  disableOn: 300
-		});			
-
-		/*START PARTNER LOGO*/
-		$('.partner').owlCarousel({
-		  autoPlay: 3000, //Set AutoPlay to 3 seconds
-		  items : 5,
-		  itemsDesktop : [1199,3],
-		  itemsDesktopSmall : [979,3]
-		});
-		/*END PARTNER LOGO*/		
+		/*END MENU JS*/					
 
 		/*START TESTIMONIAL JS*/	
 		$("#testimonial-slider").owlCarousel({
@@ -129,9 +99,88 @@ Version      : 1.0
 	/*START WOW ANIMATION JS*/
 	  new WOW().init();	
 	/*END WOW ANIMATION JS*/	
-			
-})(jQuery);
 
+	/* START Q&A FUNCTIONALITY */
+		$('.subscribe__btn').on('click', function(event) {
+			event.preventDefault();
+		
+			var $btn = $(this);
+			var question = $('.home_si').val().trim();
+		
+			$('#response').empty();
+			if (!question) {
+				$('#response').html('请输入问题。');
+				return;
+			}
+		
+			$btn.prop('disabled', true).text('提问中...');
+			$('#response').html('<div class="loader"></div>');
+		
+			$.ajax({
+				url: 'http://127.0.0.1:5500/api/query', 
+				type: 'POST',
+				contentType: 'application/json',
+				data: JSON.stringify({ question: question }),
+				success: function(response) {
+					console.log("Received response:", response);
+					if(response.result) {
+						$('#response').html(response.result);
+					} else {
+						console.error("Unexpected response format:", response);
+						$('#response').html("Received unexpected response format.");
+					}
+				},
+				error: function(xhr, status, error) {
+					console.log("AJAX error response:", xhr.responseText);
+					var errorMessage = xhr.status === 0 ? '无法连接到API，请检查您的网络连接。' :
+									   xhr.status === 404 ? 'API端点未找到。' :
+									   xhr.status === 500 ? '服务器内部错误。' :
+									   '无法获取回答，请稍后再试。';
+					$('#response').html(errorMessage);
+				},
+				complete: function() {
+					$btn.prop('disabled', false).text('提问');
+				}
+			});
+
+			var windowHeight = $(window).height();
+			var responseHeight = $('#response').outerHeight(true);
+			var offsetTop = $('#response').offset().top;
+			var scrollTarget = offsetTop - (windowHeight / 2) + (responseHeight / 2);
+			
+			$('html, body').animate({
+				scrollTop: scrollTarget
+			}, 100);
+		});
+	/* END Q&A FUNCTIONALITY */
+			
+	/* JUMP */
+		document.addEventListener('DOMContentLoaded', function() {
+
+			var isIndexPage = document.querySelector('.home_si') !== null;
+			var isAskAIPage = document.querySelector('.ai_input') !== null;
+			
+			if (window.location.pathname.endsWith('index.html')) {
+				var btn = document.querySelector('.subscribe__btn');
+
+				btn.addEventListener('click', function() {
+					window.location.href = 'askAI.html'; 
+				});
+			}
+		
+			if (window.location.pathname.endsWith('askAI.html')) {
+				var params = new URLSearchParams(window.location.search);
+				var question = params.get('question');
+				var input = document.querySelector('.ai_input');
+				var askButton = document.querySelector('.ai_askBtn');
+		
+				if (question) {
+					input.value = decodeURIComponent(question);
+					setTimeout(() => askButton.click(), 50);
+				}
+			}
+		});
+})(jQuery);
 
   
 
