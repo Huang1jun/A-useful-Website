@@ -1,3 +1,5 @@
+//** jQuery Scroll to Top Control script- (c) Dynamic Drive DHTML code library: http://www.dynamicdrive.com.
+//** Available/ usage terms at http://www.dynamicdrive.com (March 30th, 09')
 var scrolltotop={
 	setting: {startline:100, scrollto: 0, scrollduration:300, fadeduration:[500, 100]},
 	controlHTML: '<i class="fa fa-angle-up scrolltop"></i>',
