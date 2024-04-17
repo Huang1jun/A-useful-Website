@@ -1,19 +1,29 @@
 <?php
-	if (isset($_POST["submit"])) {
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$message = $_POST['message'];
-		$from = 'Yale Contact Form'; 
-		$to = 'example@gmail.com'; 
-		$subject = $_POST['subject']; 
-		
-		$body = "From: $name\n E-Mail: $email\n Subject: $subject\n Message:\n $message";
-	
 
-	mail($to, $subject, $body, $from) or die("Error!");
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $subject = htmlspecialchars($_POST['subject']);
+    $message = htmlspecialchars($_POST['message']);
 
-	header("location: thank-you.html");
-	
-	}
-	
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        die("Invalid email format");
+    }
+    $to = "example@gmail.com"; 
+    $from = "from@example.com"; 
+    $headers = "From: Yale Contact Form <$from>\r\n";
+    $headers .= "Reply-To: $email\r\n";
+
+    $body = "Name: $name\n";
+    $body .= "Email: $email\n";
+    $body .= "Subject: $subject\n";
+    $body .= "Message: \n$message";
+
+    if (mail($to, $subject, $body, $headers)) {
+        header("Location: thank-you.html"); 
+    } else {
+        die("Failed to send email. Please try again later."); 
+    }
+}
+
 ?>
