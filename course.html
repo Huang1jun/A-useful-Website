@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Meta -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<meta name="description" content="Education of college students">
+		<meta name="keywords" content="college, course, e-learning, education, high school, kids, learning, online, online courses, school, student, teacher, tutor, university">
+		<meta name="author" content="mucNM1">
+		<!-- SITE TITLE -->
 		<title>Education of college students</title>			
+		<!-- Latest Bootstrap min CSS -->
 		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">		
-		<link rel="stylesheet" href="assets/css/style.css" />	
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">			
+		<!-- Style CSS -->					
+		<link rel="stylesheet" href="assets/css/style.css" />				
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<style>
+			#main-menu {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			#main-menu ul li {
+				padding: 0px 28px; 
+			}
+
+			#main-menu ul li a {
+				display: block;
+				padding: 25px 0; 
+			}
+
+			.tooltip-link {
+				position: relative;
+				text-decoration: none; 
+				color: #007BFF;
+				font-weight: bold;
+				cursor: pointer;
+			}
+
+			.tooltip-text {
+				visibility: hidden;
+				width: 160px;
+				background-color: #207269 !important;
+				color: white  !important; 
+				text-align: center;
+				border-radius: 6px;
+				padding: 8px 10px;
+				position: absolute;
+				z-index: 1;
+				bottom: 130%;
+				left: 50%;
+				transform: translateX(-50%) scale(0.95);
+				opacity: 0;
+				transition: all 0.3s ease;
+				box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+			}
+
+			.tooltip-link:hover .tooltip-text {
+				visibility: visible;
+				opacity: 1;
+				transform: translateX(-50%) scale(1);
+			}
+
+			.tooltip-text::after {
+				content: "";
+				position: absolute;
+				top: 100%;
+				left: 50%;
+				margin-left: -5px;
+				border-width: 5px;
+				border-style: solid;
+				border-color: #333 transparent transparent transparent;
+			}
+			@media (max-width: 600px) {
+				.tooltip-text {
+					width: 100px; /* 在小屏幕上减少宽度 */
+				}
+			}
+		</style>
 </head>
 <body>
 	
@@ -15,43 +91,34 @@
 			<span class="loader"></span>
 		</div>
 	<!-- END PRELOADER -->
-	
+
 	<!-- START LOGO WITH CONTACT -->
 	<section class="logo-contact">
 		<div class="container">
-			<div class="row">
+			<div class="row d-flex justify-content-between">
+				<!-- Contact Items -->
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 					<div class="single-top-contact">
 						<i class="fa fa-phone"></i>
-						<h4>+485 7548 854826</h4>
+						<h4>+86 188 8888 8888</h4>
 					</div>
 				</div><!--- END COL -->	
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 					<div class="single-top-contact">							
 						<i class="fa fa-envelope"></i>
-						<h4><a href="mailto:example@gmail.com">example@mail.com</a></h4>	
+						<h4><a href="mailto:example@gmail.com">example@gmail.com</a></h4>	
 					</div>
 				</div><!--- END COL -->	
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 					<div class="single-top-contact">
 						<i class="fa fa-clock-o"></i>
-						<h4>Mon to sat Open: 9am - 6pm</h4>
+						<h4>全天开放</h4>
 					</div>
-				</div><!--- END COL -->	
-				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="top_social_profile">
-						<ul>
-							<li><a href="#" class="top_f_facebook"><i class="fa fa-facebook" title="Facebook"></i></a></li>
-							<li><a href="#" class="top_f_twitter"><i class="fa fa-twitter" title="Twitter"></i></a></li>
-							<li><a href="#" class="top_f_instagram"><i class="fa fa-instagram" title="Instagram"></i></a></li>
-							<li><a href="#" class="top_f_linkedin"><i class="fa fa-linkedin" title="LinkedIn"></i></a></li>
-						</ul>
-					</div>
-				</div><!--- END COL -->						
+				</div><!--- END COL -->					
 			</div><!--- END ROW -->
 		</div><!--- END CONTAINER -->
 	</section>
-	<!-- END LOGO WITH CONTACT -->	
+	<!-- END LOGO WITH CONTACT -->
 	
 	<!-- START NAVBAR -->  
 	<div id="navigation" class="fixed-top navbar-light bg-faded site-navigation">
@@ -59,76 +126,40 @@
 			<div class="row">
 				<div class="col-lg-2 col-md-3 col-sm-4">
 					<div class="site-logo">
-						<a href="index.html"><img src="assets/images/all-img/logo.png" alt=""></a>          			        				
+						<a href="index.html"><img src="assets/images/logo.png" alt="" style="width: 50px; height: auto;"></a>          			        				
 					</div>
 				</div><!--- END Col -->
 				
-				<div class="col-lg-6 col-md-9 col-sm-8 ">
+				<div class="col-lg-6 col-md-10 col-sm-8 ">
 					<div class="header_right ">
 						<nav id="main-menu" class="ms-auto">
 							<ul>
-							  <li><a class="nav-link" href="index.html">Home <span class="ti-angle-down"></span></a>
-								<ul>
-									<li><a class="nav-link" href="index.html">Home 01</a></li>
-									<li><a class="nav-link" href="index_2.html">Home 02</a></li>
-									<li><a class="nav-link" href="index_3.html">Home 03</a></li>
-								</ul>
+							  <li>
+								<a class="nav-link" href="index.html">主页  </a>
+								
 							   </li>
-							    <li><a class="nav-link" href="#">Pages <span class="ti-angle-down"></span></a>
+							    <li><a class="nav-link" href="#">页面<span class="ti-angle-down"></span></a>
 									<ul>
-										<li><a class="nav-link" href="about.html">About Us</a></li>										
-										<li><a class="nav-link" href="team.html">Instructor</a></li>
-										<li><a class="nav-link" href="team-details.html">Instructor Details</a></li>
-										<li><a class="nav-link" href="faq.html">FAQ's</a></li>
-										<li><a class="nav-link" href="event.html">Event</a></li>
-										<li><a class="nav-link" href="event_single.html">Event Single</a></li>
-										<li><a class="nav-link" href="error.html">404 Page</a></li>										
-										<li><a class="nav-link" href="login.html">Login</a></li>
-										<li><a class="nav-link" href="register.html">Register</a></li>
+										<li><a class="nav-link" href="about.html">关于我们</a></li>										
+										<li><a class="nav-link" href="team.html">导师概览</a></li>
+										<li><a class="nav-link" href="team-details.html">导师介绍</a></li>						
 									</ul>
 								</li>
-								<li><a class="nav-link" href="course.html">Courses <span class="ti-angle-down"></span></a>
-									<ul>
-										<li><a class="nav-link" href="course.html">Courses 01</a></li>
-										<li><a class="nav-link" href="course2.html">Courses 02</a></li>
-										<li><a class="nav-link" href="course3.html">Courses 03</a></li>
-										<li><a class="nav-link" href="course-sidebar.html">Course Sidebar</a></li>
-										<li><a class="nav-link" href="single_course.html">Course details</a></li>
-									</ul>
+								<li>
+									<a class="nav-link" href="course.html">课程 </a>
+									
 								</li>
-								<li><a class="nav-link" href="shop.html">Shop <span class="ti-angle-down"></span></a>
-									<ul>
-										<li><a class="nav-link" href="shop.html">Shop</a></li>
-										<li><a class="nav-link" href="single_shop.html">Single Shop</a></li>
-										<li><a class="nav-link" href="cart.html">Cart Page</a></li>
-										<li><a class="nav-link" href="checkout.html">Checkout page</a></li>
-									</ul>
-								</li>								
-								<li><a class="nav-link" href="blog.html">Blog <span class="ti-angle-down"></span></a>
-									<ul>
-										<li><a class="nav-link" href="blog.html">Blog List</a></li>
-										<li><a class="nav-link" href="blog_single.html">Single Blog</a></li>
-									</ul>
-								</li>
-							    <li><a class="nav-link" href="contact.html">Contact</a></li>
+								
+							    <li><a class="nav-link" href="contact.html">联系我们</a></li>
 							</ul>
 						</nav>
 						<div id="mobile_menu"></div>
 					</div>
 				</div><!--- END Col -->
 				<div class="col-lg-4 col-md-3 col-sm-8 m-none">
-					<div class="home_lc">
-						<a href="#" class="hlc">
-						  <i class="ti-heart"></i>
-						  <span class="gactive">0</span>
-					   </a>
-						<a href="#" class="hlc">
-						  <i class="ti-shopping-cart-full"></i>
-						  <span class="gactive">2</span>
-					   </a>
-					</div>
+
 					<div class="call_to_action">
-						<a class="btn_two" href="register.html">Login / Register</a>
+						<a class="btn_two" href="#">登录 / 注册</a>
 					</div><!--- END SOCIAL PROFILE -->					
 				</div><!--- END Col -->
 			</div><!--- END ROW -->
@@ -141,7 +172,7 @@
 		<div class="container">
 			<div class="col-lg-10 offset-lg-1 text-center">
 				<div class="section-top-title wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-					<h1>All Course</h1>
+					<h1>课程</h1>
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li> / Course</li>
@@ -164,12 +195,9 @@
 					<div class="course-slide">
 						<div class="course-img">
 							<img src="assets\images\b1.png" alt="">
-							<div class="course-date">
-								<span class="month">free</span>
-							</div>
 						</div>
 						<div class="course-content"><a class="c_btn" href="#">艺术与表演</a>
-							<h3><a href="#">英文戏剧表演（Drama Performance）</a></h3>
+							<h3><a href="rate.html" class="tooltip-link">英文戏剧鉴赏<span class="tooltip-text">为该课程评分</span></a></h3>
 							<span><i class="fa fa-calendar"></i>16 课时</span>
 							<span><i class="fa fa-clock-o"></i>1小时</span>
 							<span><i class="fa fa-star"></i>4.9</span>
@@ -181,31 +209,26 @@
 				<div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 					<div class="course-slide">
 						<div class="course-img">
-							<img src="assets\images\b2.png" alt="">
-							<div class="course-date">
-								<span class="month">free</span>
-							</div>
+							<img src="assets/images/b2.png" alt="">
 						</div>
-						<div class="course-content"><a class="c_btn" href="#">运动</a>
-							<h3><a href="#">羽毛球</a></h3>
+						<div class="course-content">
+							<a class="c_btn" href="#">运动</a>
+							<h3><a href="rate.html" class="tooltip-link">羽毛球<span class="tooltip-text">为该课程评分</span></a></h3>
 							<span><i class="fa fa-calendar"></i>16 课时</span>
 							<span><i class="fa fa-clock-o"></i>3小时</span>
-							<span><i class="fa fa-star"></i>4.7</span>
+							<span class="star-rating-trigger"><i class="fa fa-star"></i>4.7</span>
 							<span><i class="fa fa-table"></i><strong>16 个座位可用</strong></span>
-							
 						</div>
-					</div><!--END COURSE SLIDE -->	
-				</div><!--END COL -->			
+					</div>
+				</div>						
 				<div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
 					<div class="course-slide">
 						<div class="course-img">
 							<img src="assets\images\b3.png" alt="">
-							<div class="course-date">
-								<span class="month">free</span>
-							</div>
+ 
 						</div>
 						<div class="course-content"><a class="c_btn" href="#">审美</a>
-							<h3><a href="#">舞蹈鉴赏</a></h3>
+							<h3><a href="rate.html" class="tooltip-link">舞蹈鉴赏<span class="tooltip-text">为该课程评分</span></a></h3>
 							<span><i class="fa fa-calendar"></i>32 课时</span>
 							<span><i class="fa fa-clock-o"></i>1小时35分钟</span>
 							<span><i class="fa fa-star"></i>4.8</span>
@@ -218,12 +241,9 @@
 					<div class="course-slide">
 						<div class="course-img">
 							<img src="assets\images\b4.png" alt="">
-							<div class="course-date">
-								<span class="month">free</span>
-							</div>
 						</div>
 						<div class="course-content"><a class="c_btn" href="#">心理</a>
-							<h3><a href="#">人格心理学：自我探索之旅</a></h3>
+							<h3><a href="rate.html" class="tooltip-link">人格心理学：自我探索之旅<span class="tooltip-text">为该课程评分</span></a></h3>
 							<span><i class="fa fa-calendar"></i>16 课时</span>
 							<span><i class="fa fa-clock-o"></i>1小时40分钟</span>
 							<span><i class="fa fa-star"></i>4.7</span>
@@ -236,12 +256,10 @@
 					<div class="course-slide">
 						<div class="course-img">
 							<img src="assets\images\b5.png" alt="">
-							<div class="course-date">
-								<span class="month">free</span>
-							</div>
+ 
 						</div>
 						<div class="course-content"><a class="c_btn" href="#">数据科学</a>
-							<h3><a href="#">面向对象程序设计</a></h3>
+							<h3><a href="rate.html" class="tooltip-link">面向对象程序设计<span class="tooltip-text">为该课程评分</span></a></h3>
 							<span><i class="fa fa-calendar"></i>54 课时</span>
 							<span><i class="fa fa-clock-o"></i>2小时25分钟</span>
 							<span><i class="fa fa-star"></i>4.9</span>
@@ -254,12 +272,10 @@
 					<div class="course-slide">
 						<div class="course-img">
 							<img src="assets\images\b6.png" alt="">
-							<div class="course-date">
-								<span class="month">free</span>
-							</div>
+ 
 						</div>
 						<div class="course-content"><a class="c_btn" href="#">人文</a>
-							<h3><a href="#">人类文明经典赏析</a></h3>
+							<h3><a href="rate.html" class="tooltip-link">人类文明经典赏析<span class="tooltip-text">为该课程评分</span></a></h3>
 							<span><i class="fa fa-calendar"></i>32 课时</span>
 							<span><i class="fa fa-clock-o"></i>1小时35分钟</span>
 							<span><i class="fa fa-star"></i>4.9</span>
@@ -272,12 +288,10 @@
 					<div class="course-slide">
 						<div class="course-img">
 							<img src="assets\images\b7.png" alt="">
-							<div class="course-date">
-								<span class="month">free</span>
-							</div>
+ 
 						</div>
 						<div class="course-content"><a class="c_btn" href="#">运动</a>
-							<h3><a href="#">自行车骑行</a></h3>
+							<h3><a href="rate.html" class="tooltip-link">自行车骑行<span class="tooltip-text">为该课程评分</span></a></h3>
 							<span><i class="fa fa-calendar"></i>16 课时</span>
 							<span><i class="fa fa-clock-o"></i>3小时</span>
 							<span><i class="fa fa-star"></i>4.9</span>
@@ -290,12 +304,10 @@
 					<div class="course-slide">
 						<div class="course-img">
 							<img src="assets\images\b8.png" alt="">
-							<div class="course-date">
-								<span class="month">free</span>
-							</div>
+ 
 						</div>
 						<div class="course-content"><a class="c_btn" href="#">政治</a>
-							<h3><a href="#">马克思主义基本原理</a></h3>
+							<h3><a href="rate.html" class="tooltip-link">马克思主义基本原理<span class="tooltip-text">为该课程评分</span></a></h3>
 							<span><i class="fa fa-calendar"></i>48 课时</span>
 							<span><i class="fa fa-clock-o"></i>1小时35分钟</span>
 							<span><i class="fa fa-star"></i>4.7</span>
@@ -308,12 +320,10 @@
 					<div class="course-slide">
 						<div class="course-img">
 							<img src="assets\images\b9.png" alt="">
-							<div class="course-date">
-								<span class="month">free</span>
-							</div>
+ 
 						</div>
 						<div class="course-content"><a class="c_btn" href="#">商业</a>
-							<h3><a href="#">商业管理基础概论</a></h3>
+							<h3><a href="rate.html" class="tooltip-link">商业管理基础概论<span class="tooltip-text">为该课程评分</span></a></h3>
 							<span><i class="fa fa-calendar"></i>64 课时</span>
 							<span><i class="fa fa-clock-o"></i>3小时30分钟</span>
 							<span><i class="fa fa-star"></i>4.8</span>
@@ -333,9 +343,8 @@
 			<div class="row">						
 				<div class="col-lg-3 col-sm-6 col-xs-12">
 					<div class="single_footer">
-						<a href="#"><img src="assets\images\LOGO.png" alt=""></a>         
-						<p>Hi!
-							我们是来自中央民族大学海南国际学院的一支团队。我们的成员均为大一学生。我们梦想着有一天能设计出稳定，高效，可以便捷同学学习的网站。</p>
+						<h4>HI!</h4>         
+						<p>我们是来自中央民族大学海南国际学院的一支团队。我们的成员均为大一学生。我们梦想着有一天能设计出稳定，高效，可以便捷同学学习的网站。</p>
 					</div>
 					<div class="foot_social">
 						<ul>
@@ -363,22 +372,22 @@
 						<ul>
 							<li><a href="#">关于我们</a></li>
 							<li><a href="#">项目进展</a></li>
-							<li><a href="#">在线社区</a></li>						
-							<li><a href="#">支持团队</a></li>						
+							<li><a href="#">在线社区</a></li>			
+							<li><a href="#">支持我们</a></li>						
 						</ul>
 					</div>
 				</div><!--- END COL -->	
 				<div class="col-lg-3 col-sm-6 col-xs-12">
 					<div class="single_footer">
-						<h4>联系信息</h4>
+						<h4>如何联系我们</h4>
 						<div class="sf_contact">
 							<span class="ti-mobile"></span>
-							<h3>电话号码</h3>
+							<h3>号码</h3>
 							<p>+86 188 8888 8888</p>
 						</div>
 						<div class="sf_contact">
 							<span class="ti-email"></span>
-							<h3>电子邮件地址</h3>
+							<h3>邮件地址</h3>
 							<p>example@gmail.com</p>
 						</div>
 						<div class="sf_contact">
@@ -398,7 +407,7 @@
 				<div class="col-lg-6 col-sm-6 col-xs-12">
 					<div class="footer_menu">
 						<ul>
-							<li><a href="#">使用条款</a></li>
+							<li><a href="#">使用事项</a></li>
 							<li><a href="#">隐私政策</a></li>
 							<li><a href="#">Cookie政策</a></li>
 						</ul>
@@ -407,7 +416,7 @@
 			</div>				
 		</div><!--- END CONTAINER -->
 	</div>
-	<!-- END FOOTER -->			
+	<!-- END FOOTER -->		
 		
 	<!-- Latest jQuery -->
 		<script src="assets/js/jquery-1.12.4.min.js"></script>
@@ -429,3 +438,4 @@
 		<script src="assets/js/scripts.js"></script>				
 </body>
 </html>
+
