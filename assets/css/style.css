@@ -23,7 +23,6 @@ Version      : 1.0
     16. START SECTION TOP DESIGN
     18. START EVENTS DESIGN
     20. START ERROR DESIGN
-    21. START LOGIN AND REGISTER DESIGN
     22. START CONTACT DESIGN
     23. START ABOUT PAGE DESIGN
     23. START NEWSLETTER DESIGN
@@ -973,43 +972,6 @@ border: 2px solid #4d54fd!important;
 /*
 * ----------------------------------------------------------------------------------------
 * 03. END HOMEPAGE CSS STYLE
-* ----------------------------------------------------------------------------------------
-*/
-/*
-* ----------------------------------------------------------------------------------------
-* 04. START TOP PROMO STYLE
-* ----------------------------------------------------------------------------------------
-*/
-.tp_feature_p3{padding-bottom:50px;}
-.tp_feature{
-background:#282a74;
-padding-bottom:50px;
-}
-.single_tp {
-	padding: 60px;
-	margin-bottom: 30px;
-	position: relative;
-	-webkit-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s;
-	box-shadow: 0px 0px 150px 0px rgba(78, 67, 250, 0.1);
-	background: #fff;
-	border-radius: 10px;
-}
-@media only screen and (max-width:880px){
-.single_tp {margin-bottom:30px;}
-}
-.single_tp h3 {
-	font-size: 20px;
-	font-weight: 800;
-	margin-bottom:15px;
-	overflow: hidden;
-}
-.single_tp p {
-	margin-bottom: 40px;
-}
-/*
-* ----------------------------------------------------------------------------------------
-* 04. END TOP PROMO CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
 /*
