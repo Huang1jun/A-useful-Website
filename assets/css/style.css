@@ -20,7 +20,6 @@ Version      : 1.0
     11. START REVIEWS DESIGN
     12. START TEAM DESIGN
     14. START FOOTER DESIGN
-    15. START PARTNER DESIGN
     16. START SECTION TOP DESIGN
     18. START EVENTS DESIGN
     20. START ERROR DESIGN
@@ -2832,7 +2831,6 @@ text-decoration: underline;
 * 14.END FOOTER DESIGN
 * ----------------------------------------------------------------------------------------
 */
-
 /*
 * ----------------------------------------------------------------------------------------
 * 16.START SECTION TOP DESIGN
@@ -3107,74 +3105,6 @@ text-align: center;
 * 20.END ERROR PAGE DESIGN
 * ----------------------------------------------------------------------------------------
 */
-
-/*
-* ----------------------------------------------------------------------------------------
-* 21.START LOGIN AND REGISTER PAGE DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-.login_register {
- background: rgba(199,201,209,.09);
-}
-.login_register_title {
-	margin-bottom: 30px;
-	margin-top: 0;
-	text-align: center;
-	text-transform: capitalize;
-	font-size: 30px;
-	font-weight: 899;
-}
-.login {
-	background: #fff none repeat scroll 0 0;
-	-webkit-box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-	        box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-	overflow: hidden;
-	padding: 30px;
-	border: 1px solid #d3ced2;
-}
-.login input {
-	margin-bottom: 30px;
-	background: #ebecff;
-	height: 50px;
-}
-.login input:focus{-webkit-box-shadow: none;box-shadow: none;outline:none;}
-.register {
-	background: #fff none repeat scroll 0 0;
-	-webkit-box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-	        box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-	overflow: hidden;
-	padding: 30px;
-	border: 1px solid #d3ced2;
-}
-.register input{
-margin-bottom:30px;
-	background: #ebecff;
-	height: 50px;
-}
-.register input:focus{-webkit-box-shadow: none;box-shadow: none;outline:none;}
-
-.login label {
-	margin-bottom: 5px;
-	font-weight: 500;
-}
-.register label {
-	margin-bottom: 5px;
-	font-weight: 500;
-}
-.login button, .register button{border:none;width: 100%;}
-.login p, .register p {
-	color: #232434;
-	font-weight: 600;
-	text-align: center;
-	margin-top: 15px;
-}
-.login p a, .register p a{color: #4d54fd;}
-/*
-* ----------------------------------------------------------------------------------------
-* 21.END LOGIN AND REGISTER PAGE DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-
 /*
 * ----------------------------------------------------------------------------------------
 * 22.START CONTACT PAGE DESIGN
