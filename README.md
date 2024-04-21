@@ -3,3 +3,4 @@ ykt{contact的问题：地图定位我最多就搞成这样了，再进一步就
 教师细节那个我还没添加具体课程的数据}
 
 - xyz：更新team.html,index.html,about.html，其中team缺教师信息，about.html还需要别的部分缝合上去。改了这三个网站中explore more使得其可以跳转到对应链接上
+- 完成了
