@@ -10,26 +10,21 @@ Version      : 1.0
     01. GENERAL STYLE (body, link color, section-title, preloader btn, overlay, section-padding etc)
     02. START BOOTSTRAP NAVIGATION OVERRIDES
     03. START HOMEPAGE CSS STYLE
-    04. START TOP PROMO DESIGN
-    05. START ABOUT CSS DESIGN
-    06. START COUNTER DESIGN
-    07. START FEATURES DESIGN
-    08. START COURSE DESIGN
-    09. START COURSE PROMOTION DESIGN
-    10. START TOPIC DESIGN
-    11. START REVIEWS DESIGN
-    12. START TEAM DESIGN
-    14. START FOOTER DESIGN
-    15. START PARTNER DESIGN
-    16. START SECTION TOP DESIGN
-    17. START PRICING DESIGN
-    18. START EVENTS DESIGN
-    20. START ERROR DESIGN
-    21. START LOGIN AND REGISTER DESIGN
-    22. START CONTACT DESIGN
-    23. START ABOUT PAGE DESIGN
-    23. START NEWSLETTER DESIGN
-    24. START FREE COURSE+INSTRUCTOR DESIGN
+    04. START ABOUT CSS DESIGN
+    05. START COUNTER DESIGN
+    06. START FEATURES DESIGN
+    07. START COURSE DESIGN
+    08. START COURSE PROMOTION DESIGN
+    09. START TOPIC DESIGN
+    10. START REVIEWS DESIGN
+    11. START TEAM DESIGN
+    12. START FOOTER DESIGN
+    13. START SECTION TOP DESIGN
+    14. START EVENT DESIGN
+    15. START ERROR DESIGN
+    16. START CONTACT DESIGN
+    17. START ABOUT PAGE DESIGN
+    18. START FREE COURSE+INSTRUCTOR DESIGN
   =============================================================*/
 /*
 * ----------------------------------------------------------------------------------------
@@ -979,44 +974,8 @@ border: 2px solid #4d54fd!important;
 */
 /*
 * ----------------------------------------------------------------------------------------
-* 04. START TOP PROMO STYLE
-* ----------------------------------------------------------------------------------------
-*/
-.tp_feature_p3{padding-bottom:50px;}
-.tp_feature{
-background:#282a74;
-padding-bottom:50px;
-}
-.single_tp {
-	padding: 60px;
-	margin-bottom: 30px;
-	position: relative;
-	-webkit-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s;
-	box-shadow: 0px 0px 150px 0px rgba(78, 67, 250, 0.1);
-	background: #fff;
-	border-radius: 10px;
-}
-@media only screen and (max-width:880px){
-.single_tp {margin-bottom:30px;}
-}
-.single_tp h3 {
-	font-size: 20px;
-	font-weight: 800;
-	margin-bottom:15px;
-	overflow: hidden;
-}
-.single_tp p {
-	margin-bottom: 40px;
-}
-/*
-* ----------------------------------------------------------------------------------------
-* 04. END TOP PROMO CSS STYLE
-* ----------------------------------------------------------------------------------------
-*/
-/*
-* ----------------------------------------------------------------------------------------
-* 04. START ABOUT CSS STYLE
+* 04
+. START ABOUT CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
 .ab_one {
@@ -1086,12 +1045,12 @@ margin-bottom:60px;
 }
 /*
 * ----------------------------------------------------------------------------------------
-* 05. END ABOUT CSS STYLE
+* 04. END ABOUT CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
 /*
 * ----------------------------------------------------------------------------------------
-* 06. START COUNTER CSS STYLE
+* 05. START COUNTER CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
 .count_bg {
@@ -1127,13 +1086,13 @@ color: #fff;
 }
 /*
 * ----------------------------------------------------------------------------------------
-* 06. END COUNTER CSS STYLE
+* 05. END COUNTER CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
 
 /*
 * ----------------------------------------------------------------------------------------
-* 07.START FEATURES DESIGN
+* 06.START FEATURES DESIGN
 * ----------------------------------------------------------------------------------------
 */
 .marketing_content_area {
@@ -1200,12 +1159,12 @@ background:#4d54fd;
 
 /*
 * ----------------------------------------------------------------------------------------
-* 07.END FEATURES DESIGN
+* 06.END FEATURES DESIGN
 * ----------------------------------------------------------------------------------------
 */
 /*
 * ----------------------------------------------------------------------------------------
-* 08.START COURSE DESIGN
+* 07.START COURSE DESIGN
 * ----------------------------------------------------------------------------------------
 */
 .course-slide{
@@ -2060,12 +2019,12 @@ margin:30px 0;
 /*END COURSE DETAILS TAB CSS*/
 /*
 * ----------------------------------------------------------------------------------------
-* 08.END COURSE DESIGN
+* 07.END COURSE DESIGN
 * ----------------------------------------------------------------------------------------
 */
 /*
 * ----------------------------------------------------------------------------------------
-* 09.START COURSE PROMOTION DESIGN
+* 08.START COURSE PROMOTION DESIGN
 * ----------------------------------------------------------------------------------------
 */
 .course_promo {
@@ -2161,12 +2120,12 @@ font-size: 30px;
 }
 /*
 * ----------------------------------------------------------------------------------------
-* 09.END COURSE PROMOTION DESIGN
+* 08.END COURSE PROMOTION DESIGN
 * ----------------------------------------------------------------------------------------
 */
 /*
 * ----------------------------------------------------------------------------------------
-* 10.START TOPIC DESIGN
+* 09.START TOPIC DESIGN
 * ----------------------------------------------------------------------------------------
 */
 
@@ -2272,12 +2231,12 @@ font-size: 12px;
 color: rgba(255, 255, 255, 0.9); }
 /*
 * ----------------------------------------------------------------------------------------
-* 10.END TOPIC DESIGN
+* 09.END TOPIC DESIGN
 * ----------------------------------------------------------------------------------------
 */
 /*
 * ----------------------------------------------------------------------------------------
-* 11. START REVIEWS DESIGN
+* 10. START REVIEWS DESIGN
 * ----------------------------------------------------------------------------------------
 */
 .testi_home_area {
@@ -2394,12 +2353,12 @@ display:block;
 }
 /*
 * ----------------------------------------------------------------------------------------
-* 11.END REVIEWS DESIGN
+* 10.END REVIEWS DESIGN
 * ----------------------------------------------------------------------------------------
 */
 /*
 * ----------------------------------------------------------------------------------------
-* 12. START TEAM CSS STYLE
+* 11. START TEAM CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
 /*START HOME PAGE TEAM DESIGN*/
@@ -2704,12 +2663,12 @@ margin-right: 5px;
 /*END SINGLE TEAM DETAILS*/
 /*
 * ----------------------------------------------------------------------------------------
-* 12. END TEAM CSS STYLE
+* 11. END TEAM CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
 /*
 * ----------------------------------------------------------------------------------------
-* 14.START FOOTER DESIGN
+* 12.START FOOTER DESIGN
 * ----------------------------------------------------------------------------------------
 */
 .footer {
@@ -2830,59 +2789,12 @@ text-decoration: underline;
 }
 /*
 * ----------------------------------------------------------------------------------------
-* 14.END FOOTER DESIGN
+* 12.END FOOTER DESIGN
 * ----------------------------------------------------------------------------------------
 */
 /*
 * ----------------------------------------------------------------------------------------
-* 15.START PARTNER DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-.partner-logo{
-	background: #ebecff;
-	padding-bottom: 50px;
-}
-.pl_bg{background: #282a74;}
-.partner_title{margin-top:40px;}
-@media only screen and (max-width:768px) { 
-.partner_title{
-margin-top:0px;
-margin-bottom:60px;
-}
-}
-.partner_title h4 {
-	margin-bottom: 10px;
-	text-transform: uppercase;
-	font-size: 16px;
-}
-.partner_title h1 {
-	font-size: 44px;
-	font-weight: 600;
-	margin-bottom: 20px;
-	width: 80%;
-}
-.partner_title p{width: 80%;}
-@media only screen and (max-width:768px) { 
-.partner_title h1 {width: 100%;}
-.partner_title p{width: 80%;}
-}
-.partner_logo {
-	background:#fff;
-	border: 1px solid #eee;
-	margin-bottom: 30px;
-	padding: 30px 0;
-}
-.partner_logo a{}
-.partner_logo a img{}
-/*
-* ----------------------------------------------------------------------------------------
-* 15.END PARTNER DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-
-/*
-* ----------------------------------------------------------------------------------------
-* 16.START SECTION TOP DESIGN
+* 13.START SECTION TOP DESIGN
 * ----------------------------------------------------------------------------------------
 */
 .section-top {
@@ -2930,12 +2842,12 @@ margin-bottom:60px;
 .section-top-title ul li a:hover { color: #1a2d62!important }
 /*
 * ----------------------------------------------------------------------------------------
-* 16.END SECTION TOP DESIGN
+* 13.END SECTION TOP DESIGN
 * ----------------------------------------------------------------------------------------
 */
 /*
 * ----------------------------------------------------------------------------------------
-* 18.START EVENT DESIGN
+* 14.START EVENT DESIGN
 * ----------------------------------------------------------------------------------------
 */
 .our-event {padding-bottom:50px;}
@@ -3127,13 +3039,13 @@ text-align: center;
 /*END SINGLE EVENT DESIGN*/
 /*
 * ----------------------------------------------------------------------------------------
-* 18.END EVENT DESIGN
+* 14.END EVENT DESIGN
 * ----------------------------------------------------------------------------------------
 */
 
 /*
 * ----------------------------------------------------------------------------------------
-* 20.START ERROR PAGE DESIGN
+* 15.START ERROR PAGE DESIGN
 * ----------------------------------------------------------------------------------------
 */
 .error_page{}
@@ -3151,80 +3063,13 @@ text-align: center;
 }
 /*
 * ----------------------------------------------------------------------------------------
-* 20.END ERROR PAGE DESIGN
+* 15.END ERROR PAGE DESIGN
 * ----------------------------------------------------------------------------------------
 */
 
 /*
 * ----------------------------------------------------------------------------------------
-* 21.START LOGIN AND REGISTER PAGE DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-.login_register {
- background: rgba(199,201,209,.09);
-}
-.login_register_title {
-	margin-bottom: 30px;
-	margin-top: 0;
-	text-align: center;
-	text-transform: capitalize;
-	font-size: 30px;
-	font-weight: 899;
-}
-.login {
-	background: #fff none repeat scroll 0 0;
-	-webkit-box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-	        box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-	overflow: hidden;
-	padding: 30px;
-	border: 1px solid #d3ced2;
-}
-.login input {
-	margin-bottom: 30px;
-	background: #ebecff;
-	height: 50px;
-}
-.login input:focus{-webkit-box-shadow: none;box-shadow: none;outline:none;}
-.register {
-	background: #fff none repeat scroll 0 0;
-	-webkit-box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-	        box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-	overflow: hidden;
-	padding: 30px;
-	border: 1px solid #d3ced2;
-}
-.register input{
-margin-bottom:30px;
-	background: #ebecff;
-	height: 50px;
-}
-.register input:focus{-webkit-box-shadow: none;box-shadow: none;outline:none;}
-
-.login label {
-	margin-bottom: 5px;
-	font-weight: 500;
-}
-.register label {
-	margin-bottom: 5px;
-	font-weight: 500;
-}
-.login button, .register button{border:none;width: 100%;}
-.login p, .register p {
-	color: #232434;
-	font-weight: 600;
-	text-align: center;
-	margin-top: 15px;
-}
-.login p a, .register p a{color: #4d54fd;}
-/*
-* ----------------------------------------------------------------------------------------
-* 21.END LOGIN AND REGISTER PAGE DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-
-/*
-* ----------------------------------------------------------------------------------------
-* 22.START CONTACT PAGE DESIGN
+* 16.START CONTACT PAGE DESIGN
 * ----------------------------------------------------------------------------------------
 */
 .contact label {
@@ -3316,12 +3161,12 @@ font-weight: 700;
 }
 /*
 * ----------------------------------------------------------------------------------------
-* 22.END CONTACT PAGE DESIGN
+* 16.END CONTACT PAGE DESIGN
 * ----------------------------------------------------------------------------------------
 */
 /*
 * ----------------------------------------------------------------------------------------
-* 23. START ABOUT PAGE & SINGLE USE CASE CSS
+* 17. START ABOUT PAGE & SINGLE USE CASE CSS
 * ----------------------------------------------------------------------------------------
 */
 .about-page{padding-bottom:50px;}
@@ -3397,70 +3242,12 @@ overflow: hidden;
 
 /*
 * ----------------------------------------------------------------------------------------
-* 23. END ABOUT PAGE & SINGLE USE CASE CSS
+* 17. END ABOUT PAGE & SINGLE USE CASE CSS
 * ----------------------------------------------------------------------------------------
 */
-
-
-/*24. START NEWSLETTER*/
-.subs_form{}
-.subs_form h3 {
-	font-weight: 800;
-	font-size: 40px;
-	margin-bottom: 20px;
-}
-.subs_form p{}
-
-.home_subs {
-	display: block;
-	position: relative;
-	margin-top: 30px;
-	width: 100%;
-}
-.home_subs button{border:none;}
-.newsletter_area {
-	border-top: 1px solid #efefe8;
-}
-.subscribe__input {
-	background: #ebecff;
-	border: 1px solid #ddd;
-	border-radius: 500px;
-	color: #1a2d62;
-	display: block;
-	font-weight: 500;
-	height: 70px;
-	letter-spacing: 0.4px;
-	margin: 0;
-	padding: 0 60px 0 20px;
-	text-transform: capitalize;
-	width: 100%;
-}
-.subscribe__input:focus{
-outline:0 none;
-box-shadow:none;
-border: 1px solid #4d54fd!important;
-}
-.subscribe__btn {
-	background-color: #4d54fd;
-	border-radius: 100px;
-	color: #fff;
-	cursor: pointer;
-	display: block;
-	font-size: 22px;
-	height: 68px;
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 68px;
-}
-.subscribe__btn:hover i{
-	color:#fff;
-}
-/*24. END NEWSLETTER*/
-
 /*
 * ----------------------------------------------------------------------------------------
-* 24. START FREE COURSE+INSTRUCTOR CSS
+* 18. START FREE COURSE+INSTRUCTOR CSS
 * ----------------------------------------------------------------------------------------
 */
 .insfreecourse {
@@ -3502,7 +3289,7 @@ border: 1px solid #4d54fd!important;
 }
 /*
 * ----------------------------------------------------------------------------------------
-* 24. END FREE COURSE+INSTRUCTOR CSS
+* 18. END FREE COURSE+INSTRUCTOR CSS
 * ----------------------------------------------------------------------------------------
 */
 
