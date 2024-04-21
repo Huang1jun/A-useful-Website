@@ -22,10 +22,11 @@ Version      : 1.0
     13. START SECTION TOP DESIGN
     14. START EVENT DESIGN
     15. START ERROR DESIGN
-    16. START CONTACT DESIGN
-    17. START ABOUT PAGE DESIGN
-    18. START NEWSLETTER DESIGN
-    19. START FREE COURSE+INSTRUCTOR DESIGN
+    16. START LOGIN AND REGISTER DESIGN
+    17. START CONTACT DESIGN
+    18. START ABOUT PAGE DESIGN
+    19. START NEWSLETTER DESIGN
+    20. START FREE COURSE+INSTRUCTOR DESIGN
   =============================================================*/
 /*
 * ----------------------------------------------------------------------------------------
@@ -3070,7 +3071,74 @@ text-align: center;
 
 /*
 * ----------------------------------------------------------------------------------------
-* 16.START CONTACT PAGE DESIGN
+* 16.START LOGIN AND REGISTER PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.login_register {
+ background: rgba(199,201,209,.09);
+}
+.login_register_title {
+	margin-bottom: 30px;
+	margin-top: 0;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 30px;
+	font-weight: 899;
+}
+.login {
+	background: #fff none repeat scroll 0 0;
+	-webkit-box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+	        box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+	overflow: hidden;
+	padding: 30px;
+	border: 1px solid #d3ced2;
+}
+.login input {
+	margin-bottom: 30px;
+	background: #ebecff;
+	height: 50px;
+}
+.login input:focus{-webkit-box-shadow: none;box-shadow: none;outline:none;}
+.register {
+	background: #fff none repeat scroll 0 0;
+	-webkit-box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+	        box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+	overflow: hidden;
+	padding: 30px;
+	border: 1px solid #d3ced2;
+}
+.register input{
+margin-bottom:30px;
+	background: #ebecff;
+	height: 50px;
+}
+.register input:focus{-webkit-box-shadow: none;box-shadow: none;outline:none;}
+
+.login label {
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+.register label {
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+.login button, .register button{border:none;width: 100%;}
+.login p, .register p {
+	color: #232434;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 15px;
+}
+.login p a, .register p a{color: #4d54fd;}
+/*
+* ----------------------------------------------------------------------------------------
+* 16.END LOGIN AND REGISTER PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 17.START CONTACT PAGE DESIGN
 * ----------------------------------------------------------------------------------------
 */
 .contact label {
@@ -3162,12 +3230,12 @@ font-weight: 700;
 }
 /*
 * ----------------------------------------------------------------------------------------
-* 16.END CONTACT PAGE DESIGN
+* 17.END CONTACT PAGE DESIGN
 * ----------------------------------------------------------------------------------------
 */
 /*
 * ----------------------------------------------------------------------------------------
-* 17. START ABOUT PAGE & SINGLE USE CASE CSS
+* 18. START ABOUT PAGE & SINGLE USE CASE CSS
 * ----------------------------------------------------------------------------------------
 */
 .about-page{padding-bottom:50px;}
@@ -3243,12 +3311,12 @@ overflow: hidden;
 
 /*
 * ----------------------------------------------------------------------------------------
-* 17. END ABOUT PAGE & SINGLE USE CASE CSS
+* 18. END ABOUT PAGE & SINGLE USE CASE CSS
 * ----------------------------------------------------------------------------------------
 */
 
 
-/*18. START NEWSLETTER*/
+/*19. START NEWSLETTER*/
 .subs_form{}
 .subs_form h3 {
 	font-weight: 800;
@@ -3302,11 +3370,11 @@ border: 1px solid #4d54fd!important;
 .subscribe__btn:hover i{
 	color:#fff;
 }
-/*18. END NEWSLETTER*/
+/*19. END NEWSLETTER*/
 
 /*
 * ----------------------------------------------------------------------------------------
-* 19. START FREE COURSE+INSTRUCTOR CSS
+* 20. START FREE COURSE+INSTRUCTOR CSS
 * ----------------------------------------------------------------------------------------
 */
 .insfreecourse {
@@ -3348,7 +3416,7 @@ border: 1px solid #4d54fd!important;
 }
 /*
 * ----------------------------------------------------------------------------------------
-* 19. END FREE COURSE+INSTRUCTOR CSS
+* 20. END FREE COURSE+INSTRUCTOR CSS
 * ----------------------------------------------------------------------------------------
 */
 
