@@ -19,13 +19,11 @@ Version      : 1.0
     10. START TOPIC DESIGN
     11. START REVIEWS DESIGN
     12. START TEAM DESIGN
-    13. START BLOG DESIGN
     14. START FOOTER DESIGN
     15. START PARTNER DESIGN
     16. START SECTION TOP DESIGN
     17. START PRICING DESIGN
     18. START EVENTS DESIGN
-    19. START FAQ DESIGN
     20. START ERROR DESIGN
     21. START LOGIN AND REGISTER DESIGN
     22. START CONTACT DESIGN
@@ -3230,48 +3228,6 @@ text-align: center;
 /*
 * ----------------------------------------------------------------------------------------
 * 18.END EVENT DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-
-
-/* ----------------------------------------------------------------------------------------
-* 19.START FAQ DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-.faq_area{padding-bottom:40px;}
-.accordion{margin-bottom:60px;}
-.accordion-item {
-	border: 1px solid #ededed;
-	margin-bottom: 15px;
-	-webkit-box-shadow: 0px 0px 150px 0px rgba(78, 67, 250, 0.06);
-	        box-shadow: 0px 0px 150px 0px rgba(78, 67, 250, 0.06);
-	background: #fff;
-	margin-bottom: 20px;
-}
-.accordion-item:not(:first-of-type) {
-	border-top: 1px solid #ddd;
-}
-.accordion-header {
-	background: #fff !important;
-	padding: 7px 0;
-	-webkit-box-shadow: none;
-	        box-shadow: none;
-}
-.accordion-button {
-	background:none!important;
-	color: #1a2d62 !important;
-	font-weight: 700;
-	font-size:20px;
-}
-.accordion-button:not(.collapsed) {
-	color:#1a2d62!important;
-	-webkit-box-shadow: none !important;
-	        box-shadow: none !important;
-}
-.accordion-button:focus{-webkit-box-shadow: none !important;box-shadow: none !important;}
-.pt_faq{padding-left:50px;}
-/* ----------------------------------------------------------------------------------------
-* 19.END FAQ DESIGN
 * ----------------------------------------------------------------------------------------
 */
 
