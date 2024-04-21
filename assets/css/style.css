@@ -24,7 +24,8 @@ Version      : 1.0
     15. START ERROR DESIGN
     16. START CONTACT DESIGN
     17. START ABOUT PAGE DESIGN
-    18. START FREE COURSE+INSTRUCTOR DESIGN
+    18. START NEWSLETTER DESIGN
+    19. START FREE COURSE+INSTRUCTOR DESIGN
   =============================================================*/
 /*
 * ----------------------------------------------------------------------------------------
@@ -3245,9 +3246,67 @@ overflow: hidden;
 * 17. END ABOUT PAGE & SINGLE USE CASE CSS
 * ----------------------------------------------------------------------------------------
 */
+
+
+/*18. START NEWSLETTER*/
+.subs_form{}
+.subs_form h3 {
+	font-weight: 800;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.subs_form p{}
+
+.home_subs {
+	display: block;
+	position: relative;
+	margin-top: 30px;
+	width: 100%;
+}
+.home_subs button{border:none;}
+.newsletter_area {
+	border-top: 1px solid #efefe8;
+}
+.subscribe__input {
+	background: #ebecff;
+	border: 1px solid #ddd;
+	border-radius: 500px;
+	color: #1a2d62;
+	display: block;
+	font-weight: 500;
+	height: 70px;
+	letter-spacing: 0.4px;
+	margin: 0;
+	padding: 0 60px 0 20px;
+	text-transform: capitalize;
+	width: 100%;
+}
+.subscribe__input:focus{
+outline:0 none;
+box-shadow:none;
+border: 1px solid #4d54fd!important;
+}
+.subscribe__btn {
+	background-color: #4d54fd;
+	border-radius: 100px;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-size: 22px;
+	height: 68px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 68px;
+}
+.subscribe__btn:hover i{
+	color:#fff;
+}
+/*18. END NEWSLETTER*/
+
 /*
 * ----------------------------------------------------------------------------------------
-* 18. START FREE COURSE+INSTRUCTOR CSS
+* 19. START FREE COURSE+INSTRUCTOR CSS
 * ----------------------------------------------------------------------------------------
 */
 .insfreecourse {
@@ -3289,7 +3348,7 @@ overflow: hidden;
 }
 /*
 * ----------------------------------------------------------------------------------------
-* 18. END FREE COURSE+INSTRUCTOR CSS
+* 19. END FREE COURSE+INSTRUCTOR CSS
 * ----------------------------------------------------------------------------------------
 */
 
