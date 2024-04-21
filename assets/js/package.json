@@ -1,0 +1,31 @@
+{
+    "name": "js",
+    "version": "1.0.0",
+    "description": "A Node.js project for handling server requests and comments.",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "keywords": [
+        "nodejs",
+        "express",
+        "comments",
+        "server",
+        "api",
+        "mongodb"
+    ],
+    "author": "Your Name",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "cors": "^2.8.5",
+        "dotenv": "^8.6.0",
+        "express": "^4.17.1",
+        "mongoose": "^5.11.15",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "@types/dotenv": "^8.2.0"
+    }
+}
