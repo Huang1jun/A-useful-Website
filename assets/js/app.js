@@ -3,6 +3,8 @@ Author       : mucNM1
 Name         : Education of college students
 Version      : 1.0
 */
+
+/*这是api接口端，请填写您的api */
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
@@ -12,8 +14,8 @@ const PORT = 5500;
 app.use(cors());
 app.use(express.json());
 
-const API_KEY = 'Enter your api key here';
-const SECRET_KEY = 'Enter your secret_key here';
+const API_KEY = 'L7y0efjn82fQWgVkBInaTQNy';
+const SECRET_KEY = 'hMeoskyFvT08nmRRV4pZo07ah7FFv78C';
 
 const getAccessToken = async () => {
     const tokenUrl = `https://aip.baidubce.com/oauth/2.0/token`;
