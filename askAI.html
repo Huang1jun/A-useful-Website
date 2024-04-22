@@ -192,10 +192,10 @@
 						<p>您可以向我提问任何问题</p>						
 					</div>
 					<div class="home_sb">
-						<form action="#" class="banner_subs">
-							<input type="text" class="form-control home_si" placeholder="Ask me anything!" required="required">
-							<button type="button" class="subscribe__btn">提问 <i class="fa fa-paper-plane-o"></i></button>
-						</form>
+						<form action="#" class="banner_subs" onsubmit="submitQuestion(event)">
+							<input type="text" class="form-control home_si" placeholder="Ask me anything!" required="required" id="userQuestion">
+							<button type="submit" class="subscribe__btn">提问 <i class="fa fa-paper-plane-o"></i></button>
+						</form>						
 					</div>
 					
 				</div><!-- END COL-->
@@ -292,6 +292,9 @@
 	</div>
 	<!-- END FOOTER -->		
 
+
+	<!-- Link to CLT -->
+		<script src="https://imgcache.qq.com/qcloud/cloudbase-js-sdk/1.4.0/cloudbase.full.js"></script>
 	<!-- Latest jQuery -->
 		<script src="assets/js/jquery-1.12.4.min.js"></script>
 	<!-- Latest compiled and minified Bootstrap -->
