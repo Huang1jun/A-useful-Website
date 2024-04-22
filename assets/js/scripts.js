@@ -52,6 +52,7 @@ Version      : 1.0
 	  new WOW().init();	
 	/*END WOW ANIMATION JS*/	
 
+	// 腾讯云服务
 	var app = cloudbase.init({
 		env: 'awebsite-0glc3eh6b1080812' 
 	});
@@ -99,6 +100,7 @@ Version      : 1.0
 	/* END Q&A FUNCTIONALITY */
 
 
+	// 本地Ajax
 	// /* START Q&A FUNCTIONALITY */
 	// 	$('.subscribe__btn').on('click', function(event) {
 	// 		event.preventDefault();

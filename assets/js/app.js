@@ -5,6 +5,7 @@ Version      : 1.0
 */
 
 /*这是api接口端，请填写您的api */
+// 本地ajax逻辑，端口为5500
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
