@@ -1,3 +1,6 @@
+// 开发中
+
+
 // require('dotenv').config();
 // const express = require('express');
 // const axios = require('axios');
@@ -7,7 +10,7 @@
 // const morgan = require('morgan');
 
 // const app = express();
-// const PORT = process.env.PORT || 5500;  // 统一端口号
+// const PORT = process.env.PORT || 5500;
 
 // app.use(cors());
 // app.use(morgan('dev'));
