@@ -52,7 +52,6 @@ Version      : 1.0
 	  new WOW().init();	
 	/*END WOW ANIMATION JS*/	
 
-	// 初始化云环境
 	var app = cloudbase.init({
 		env: 'awebsite-0glc3eh6b1080812' 
 	});
@@ -73,19 +72,18 @@ Version      : 1.0
 		$btn.prop('disabled', true).text('提问中...');
 		$('#response').html('<div class="loader"></div>');
 
-		// 调用云函数
 		app.callFunction({
-			name: 'queryFunction', // 云函数名称
+			name: 'queryFunction',
 			data: {
 				question: question
 			}
 		}).then((res) => {
 			console.log("Received response:", res);
-			$('#response').html(res.result); // 显示云函数返回的结果
+			$('#response').html(res.result);
 			$btn.prop('disabled', false).text('提问');
 		}).catch((err) => {
 			console.error("Error calling cloud function:", err);
-			$('#response').html('无法获取回答，请稍后再试。'); // 显示错误消息
+			$('#response').html('无法获取回答，请稍后再试。');
 			$btn.prop('disabled', false).text('提问');
 		});
 
@@ -100,6 +98,60 @@ Version      : 1.0
 	});
 	/* END Q&A FUNCTIONALITY */
 
+
+	// /* START Q&A FUNCTIONALITY */
+	// 	$('.subscribe__btn').on('click', function(event) {
+	// 		event.preventDefault();
+		
+	// 		var $btn = $(this);
+	// 		var question = $('.home_si').val().trim();
+		
+	// 		$('#response').empty();
+	// 		if (!question) {
+	// 			$('#response').html('请输入问题。');
+	// 			return;
+	// 		}
+		
+	// 		$btn.prop('disabled', true).text('提问中...');
+	// 		$('#response').html('<div class="loader"></div>');
+		
+	// 		$.ajax({
+	// 			url: 'http://127.0.0.1:5500/api/query', 
+	// 			type: 'POST',
+	// 			contentType: 'application/json',
+	// 			data: JSON.stringify({ question: question }),
+	// 			success: function(response) {
+	// 				console.log("Received response:", response);
+	// 				if(response.result) {
+	// 					$('#response').html(response.result);
+	// 				} else {
+	// 					console.error("Unexpected response format:", response);
+	// 					$('#response').html("Received unexpected response format.");
+	// 				}
+	// 			},
+	// 			error: function(xhr, status, error) {
+	// 				console.log("AJAX error response:", xhr.responseText);
+	// 				var errorMessage = xhr.status === 0 ? '无法连接到API，请检查您的网络连接。' :
+	// 								   xhr.status === 404 ? 'API端点未找到。' :
+	// 								   xhr.status === 500 ? '服务器内部错误。' :
+	// 								   '无法获取回答，请稍后再试。';
+	// 				$('#response').html(errorMessage);
+	// 			},
+	// 			complete: function() {
+	// 				$btn.prop('disabled', false).text('提问');
+	// 			}
+	// 		});
+
+	// 		var windowHeight = $(window).height();
+	// 		var responseHeight = $('#response').outerHeight(true);
+	// 		var offsetTop = $('#response').offset().top;
+	// 		var scrollTarget = offsetTop - (windowHeight / 2) + (responseHeight / 2);
+			
+	// 		$('html, body').animate({
+	// 			scrollTop: scrollTarget
+	// 		}, 100);
+	// 	});
+	// /* END Q&A FUNCTIONALITY */
 			
 	/* JUMP */
 		document.addEventListener('DOMContentLoaded', function() {
