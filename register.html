@@ -155,28 +155,43 @@
 		<div class="container">
 			<div class="col-lg-10 offset-lg-1 text-center">
 				<div class="section-top-title wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-					<h1>注册页面</h1>
+					<h1>注册账号</h1>
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li> / Register</li>
+						<li><a href="index.html">主页</a></li>
+						<li> / 注册</li>
 					</ul>
 				</div><!-- //.HERO-TEXT -->
 			</div><!--- END COL -->
 		</div><!--- END CONTAINER -->
 	</section>	
 	<!-- END SECTION TOP -->
-    <form action="../register.php" method="post">
-        <p>
-            <label for="un">用户名:</label><input type="text" id="un" name="username">
-        </p>  
-        <p>
-            <label for="pw">密码:</label><input type="text" id="pw" name="password">
-        </p>      
-        <p>
-            <button>注册</button>
-        </p>
-        <p>已经注册账号? <a href="login.html">登录</a></p>
-    </form>
+    <!-- START LOGIN AND REGISTER -->
+	<section class="login_register section-padding">
+		<div class="container">
+			<div class="row">				
+				<div class="col-lg-6 offset-lg-3 col-xs-12">
+					<div class="register">
+						<h4 class="login_register_title">创建一个账号:</h4>
+                        <form action="../register.php" method="post">
+						<div class="form-group">
+							<label for="un">用户名</label>
+							<input type="text" id="un" class=" form-control requiredField input-label" name="username">
+						</div>
+						<div class="form-group">
+							<label for="pw">密码</label>
+							<input type="text" id="pw" class="form-control requiredField input-label" name="password" >
+						</div>
+						<div class="form-group col-lg-12">
+							<button class="btn_one" type="submit" name="submit">注册</button>
+						</div>
+						<p>Already have an account? <a href="login.html">Login</a></p>
+                        </form>
+					</div>
+				</div><!--- END COL -->
+			</div><!--- END ROW -->
+		</div><!--- END CONTAINER -->
+	</section>
+	<!-- END LOGIN AND REGISTER -->
     <!-- START FOOTER -->
 	<div class="footer section-padding">
 		<div class="container">				
