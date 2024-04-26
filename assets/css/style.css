@@ -2542,175 +2542,175 @@ body {
 		padding: 30px;
 		transition: 0.3s;
 	}
-.event-slide:hover{
-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.06);
-}
-.es:hover{
-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.06);
-}
-@media only screen and (max-width:480px) { 
-.event-slide {margin-bottom:30px;}
-}
-.event-slide-page{
-margin:0px 0px;
-margin-bottom:30px;
-}
-.event-slide .event-img{
-    position: relative;
-    overflow: hidden;
-}
-.event-slide .event-img img{
-    width: 100%;
-    height: auto;
-}
-.event-slide .event-date{
-    position:absolute;
-    top:10%;
-    left:4%;
-}
-.event-slide .date{
-    display: inline-block;
-    border-radius: 3px 0 0 3px;
-    padding: 5px 15px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-	background:#207269;
-    float: left;
-}
-.event-slide .month{
-    display: inline-block;
-    border-radius: 0 3px 3px 0;
-    padding: 5px 20px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    background: #7BCFA5;
-}
-.event-slide .event-content{
-    padding:30px;
-	border: 1px solid #eee;
-}
-.event-content.ec_pd {
-	padding: 0;
-	border: 0;
-	margin-top: 30px;
-}
-.event-content h3 a {
-	color: #207269;
-	font-size: 20px;
-	font-weight: 800;
-	margin: 0 0 15px 0;
-	text-transform: capitalize;
-	display: block;
-	line-height:30px;
-	transition: 0.3s;
-}
-.event-content h3 a:hover{color: #7BCFA5;}
-.event-slide .event-content span i{
-color:#7BCFA5;
-margin-right:8px;
-}
-.event-slide .event-content > span {
-	color: #207269;
-	margin-bottom: 5px;
-	display: inline-block;
-	margin-right: 20px;
-}
-.event-slide .event-description{
-margin-bottom: 20px;
-}
-.event-content p {}
+	.event-slide:hover{
+	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.06);
+	}
+	.es:hover{
+	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.06);
+	}
+	@media only screen and (max-width:480px) { 
+	.event-slide {margin-bottom:30px;}
+	}
+	.event-slide-page{
+	margin:0px 0px;
+	margin-bottom:30px;
+	}
+	.event-slide .event-img{
+		position: relative;
+		overflow: hidden;
+	}
+	.event-slide .event-img img{
+		width: 100%;
+		height: auto;
+	}
+	.event-slide .event-date{
+		position:absolute;
+		top:10%;
+		left:4%;
+	}
+	.event-slide .date{
+		display: inline-block;
+		border-radius: 3px 0 0 3px;
+		padding: 5px 15px;
+		color: #fff;
+		font-size: 20px;
+		font-weight: 500;
+		text-align: center;
+		background:#207269;
+		float: left;
+	}
+	.event-slide .month{
+		display: inline-block;
+		border-radius: 0 3px 3px 0;
+		padding: 5px 20px;
+		color: #fff;
+		font-size: 20px;
+		font-weight: 500;
+		background: #7BCFA5;
+	}
+	.event-slide .event-content{
+		padding:30px;
+		border: 1px solid #eee;
+	}
+	.event-content.ec_pd {
+		padding: 0;
+		border: 0;
+		margin-top: 30px;
+	}
+	.event-content h3 a {
+		color: #207269;
+		font-size: 20px;
+		font-weight: 800;
+		margin: 0 0 15px 0;
+		text-transform: capitalize;
+		display: block;
+		line-height:30px;
+		transition: 0.3s;
+	}
+	.event-content h3 a:hover{color: #7BCFA5;}
+	.event-slide .event-content span i{
+	color:#7BCFA5;
+	margin-right:8px;
+	}
+	.event-slide .event-content > span {
+		color: #207269;
+		margin-bottom: 5px;
+		display: inline-block;
+		margin-right: 20px;
+	}
+	.event-slide .event-description{
+	margin-bottom: 20px;
+	}
+	.event-content p {}
 
 
-/*START SINGLE EVENT DESIGN*/
-.single_event_single{}
-.single_event_single img {
-	width: 100%;
-}
-.single_event_text_single{}
+	/*START SINGLE EVENT DESIGN*/
+	.single_event_single{}
+	.single_event_single img {
+		width: 100%;
+	}
+	.single_event_text_single{}
 
-.single_event_text_single h4{
-font-size: 36px;
-font-weight: 700;
-margin-bottom: 20px;
-margin-top: 20px;
-}
-.single_event_text_single{}
-.single_event_text_single span i{
-color:#7BCFA5;
-margin-right:8px;
-}
-.single_event_text_single span {
-	color: #333;
-	margin-bottom: 5px;
-	display: inline-block;
-	margin-right: 20px;
-}
-.single_event_text_single p{margin-top:20px;}
-
-.single_event_text_single_description{margin-top:30px;}
-.single_event_text_single_description h3{
-font-size: 36px;
-font-weight: 700;
-margin-bottom: 15px;
-}
-.single_event_text_single_description p{}
-.event_info {
-	border: 1px solid #eee;
-	padding: 10px;
-	border-radius: 5px;
-	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.07);
-	padding: 30px;
-}
-.event_info h3{
-background: #7BCFA5 none repeat scroll 0 0;
-color: #fff;
-font-size: 26px;
-font-weight: 800;
-text-align: center;
-padding: 20px;
-}
-.event_info ul{list-style: none;}
-.event_info ul li{margin: 30px 0;}
-.event_info ul i{
-background: #7BCFA5 none repeat scroll 0 0;
-border-radius: 30px;
-color: #fff;
-float: left;
-font-size: 20px;
-height: 45px;
-line-height: 45px;
-margin-right: 15px;
-text-align: center;
-width: 45px;
-}
-.event_info ul h4 {
+	.single_event_text_single h4{
+	font-size: 36px;
 	font-weight: 700;
-	text-transform: capitalize;
-	overflow: hidden;
-	font-size: 22px;
-}
-.event_info ul li p{overflow: hidden;}
+	margin-bottom: 20px;
+	margin-top: 20px;
+	}
+	.single_event_text_single{}
+	.single_event_text_single span i{
+	color:#7BCFA5;
+	margin-right:8px;
+	}
+	.single_event_text_single span {
+		color: #333;
+		margin-bottom: 5px;
+		display: inline-block;
+		margin-right: 20px;
+	}
+	.single_event_text_single p{margin-top:20px;}
 
-.event_info_price{}
-.event_info_price h4{
-background: #7BCFA5 none repeat scroll 0 0;
-border-radius: 5px;
-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-color: #fff;
-font-size: 24px;
-font-weight: 800;
-margin: 30px 0;
-padding: 10px;
-text-align: center;
-}
-
-.event_info_register a {
-	width: 100%;
+	.single_event_text_single_description{margin-top:30px;}
+	.single_event_text_single_description h3{
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	}
+	.single_event_text_single_description p{}
+	.event_info {
+		border: 1px solid #eee;
+		padding: 10px;
+		border-radius: 5px;
+		box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.07);
+		padding: 30px;
+	}
+	.event_info h3{
+	background: #7BCFA5 none repeat scroll 0 0;
+	color: #fff;
+	font-size: 26px;
+	font-weight: 800;
 	text-align: center;
-}
+	padding: 20px;
+	}
+	.event_info ul{list-style: none;}
+	.event_info ul li{margin: 30px 0;}
+	.event_info ul i{
+	background: #7BCFA5 none repeat scroll 0 0;
+	border-radius: 30px;
+	color: #fff;
+	float: left;
+	font-size: 20px;
+	height: 45px;
+	line-height: 45px;
+	margin-right: 15px;
+	text-align: center;
+	width: 45px;
+	}
+	.event_info ul h4 {
+		font-weight: 700;
+		text-transform: capitalize;
+		overflow: hidden;
+		font-size: 22px;
+	}
+	.event_info ul li p{overflow: hidden;}
+
+	.event_info_price{}
+	.event_info_price h4{
+	background: #7BCFA5 none repeat scroll 0 0;
+	border-radius: 5px;
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+	color: #fff;
+	font-size: 24px;
+	font-weight: 800;
+	margin: 30px 0;
+	padding: 10px;
+	text-align: center;
+	}
+
+	.event_info_register a {
+		width: 100%;
+		text-align: center;
+	}
 	/*END SINGLE EVENT DESIGN*/
 	/*
 	* ----------------------------------------------------------------------------------------
@@ -2746,7 +2746,63 @@ text-align: center;
 	* 21.START LOGIN AND REGISTER PAGE DESIGN
 	* ----------------------------------------------------------------------------------------
 	*/
-	
+	.login_register {
+	background: rgba(199,201,209,.09);
+	}
+	.login_register_title {
+		margin-bottom: 30px;
+		margin-top: 0;
+		text-align: center;
+		text-transform: capitalize;
+		font-size: 30px;
+		font-weight: 899;
+	}
+	.login {
+		background: #fff none repeat scroll 0 0;
+		-webkit-box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+				box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+		overflow: hidden;
+		padding: 30px;
+		border: 1px solid #d3ced2;
+	}
+	.login input {
+		margin-bottom: 30px;
+		background: #ebecff;
+		height: 50px;
+	}
+	.login input:focus{-webkit-box-shadow: none;box-shadow: none;outline:none;}
+	.register {
+		background: #fff none repeat scroll 0 0;
+		-webkit-box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+				box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+		overflow: hidden;
+		padding: 30px;
+		border: 1px solid #d3ced2;
+	}
+	.register input{
+	margin-bottom:30px;
+		background: #ebecff;
+		height: 50px;
+	}
+	.register input:focus{-webkit-box-shadow: none;box-shadow: none;outline:none;}
+
+	.login label {
+		margin-bottom: 5px;
+		font-weight: 500;
+	}
+	.register label {
+		margin-bottom: 5px;
+		font-weight: 500;
+	}
+	.login button, .register button{border:none;width: 100%;}
+	.login p, .register p {
+		color: #232434;
+		font-weight: 600;
+		text-align: center;
+		margin-top: 15px;
+	}
+	.login p a, .register p a{color: #7BCFA5;}
+		
 	/*
 	* ----------------------------------------------------------------------------------------
 	* 21.END LOGIN AND REGISTER PAGE DESIGN
